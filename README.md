@@ -1,29 +1,37 @@
-# Arrow-Function-JavaScript
-```
-// Named function
-function sum1(x, y) {
-    return x + y;
-}
-console.log(sum1(2, 3));
+# Arrow Function JavaScript
 
-// Anonymous function
-var sum = function (x, y) {
+## Named function
+```
+function sum (x, y) {
     return x + y;
 }
 console.log(sum(2, 3));
-
-// Arrow function structure
+```
+## Anonymous function
+```
+var sum1 = function (x, y) {
+    return x + y;
+}
+console.log(sum1(2, 3));
+```
+## Arrow function structure
 (parameters) => {statements}
 
-// Arrow function
-var asum = x  => {
+## Arrow function
+```
+var asum = (x, y)  => x + y;
+
+console.log(asum(2, 3));
+
+var asum1 = x  => {
     x = x + 10;
     return x;
 }
 
-console.log(asum(2));
-
-// Arrow function with object literal
+console.log(asum1(2));
+```
+## Arrow function with object literal
+```
 var myObject = (firstName, lastName) => (
     {
         firstName: firstName,
